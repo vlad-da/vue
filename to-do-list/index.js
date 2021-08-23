@@ -44,3 +44,20 @@ const app6 = new Vue ({
         message: 'Hello world'
     }
 })
+
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{todo.text}}</li>'
+  })
+  
+const app7 = new Vue ({
+    el: '#app-7',
+    data: {
+        items:  [
+            {id: 0, text: 'Помыть посуду'},
+            {id: 1, text: 'Выбросить мусор'},
+            {id: 2, text: 'Пропылесосить'},
+            {id: 3, text: 'Поиграть в игры'}
+        ]
+    }
+})

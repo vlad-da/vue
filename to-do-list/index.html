@@ -34,6 +34,25 @@
         <p>{{message1}}</p>
         <input v-model="message">
     </div>
+
+    <div id="app-7">
+        <ol>
+            <todo-item
+                v-for= 'item in items'
+                v-bind:todo ='item'
+                v-binf:key=item.id
+            ></todo-item>
+        </ol>
+    </div>
+
+
+
+
+
+
+
+
+
     <script src="vue.js"></script>
     <script src="index.js"></script>
 </body>
