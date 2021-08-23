@@ -36,3 +36,11 @@ const app5 = new Vue({
         }
     }
 })
+
+const app6 = new Vue ({
+    el: '#app-6',
+    data: {
+        message1: 'How are u?',
+        message: 'Hello world'
+    }
+})
