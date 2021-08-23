@@ -12,6 +12,18 @@
         {{message}}
     </div>
 
+    <div id="app-3">
+        <span v-if="seen">now u see me</span>
+    </div>
+
+
+    <div id="app-4">
+        <ul>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ul>
+    </div>
 
     <script src="vue.js"></script>
     <script src="index.js"></script>
