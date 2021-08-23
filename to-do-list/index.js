@@ -23,4 +23,16 @@ const app4 = new Vue({
             {text: '?'}
         ]
     }
+});
+
+const app5 = new Vue({
+    el: '#app-5',
+    data: {
+        message: 'Привет мир'
+    },
+    methods: {
+        reverseMessage: function() {
+            this.message = this.message.split('').reverse().join('');
+        }
+    }
 })
